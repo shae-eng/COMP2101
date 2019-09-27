@@ -10,6 +10,8 @@
 # The listing should include the file name, owner, and size in MBytes and be displayed after the listings of setuid and setgid files
 
 echo "Setuid files:"
+echo"============="
+find / -type f-executable -perm -4000 -ls 2>/dev/null | sort -k 3
 echo "============="
 #Task 1 for the exercise is to modify it to also find and display the setgid files in a second listing
 find / -type f -executable -perm -2000 -ls 2>/dev/null | sort -k 3
