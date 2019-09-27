@@ -22,4 +22,4 @@ sum=$(( die1 + die2 ))
 average=$((sum/2))
 # display the results
 echo "Rolled $die1, $die2 for a $sum"
-echo "Rolled $die1, $die2 and an average is $average"
+echo "Rolled $die1, $die2  and an average is $average"
